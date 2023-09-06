@@ -128,7 +128,16 @@
     </div>
     <div id="about">
       <div class="picture left">
-        <img src="./assets/images/nina.avif" />
+        <img
+          srcset="
+            ./assets/images/nina-carducci-profile-pic560.avif 560w,
+            ./assets/images/nina-carducci-profile-pic446.avif 446w,
+            ./assets/images/nina-carducci-profile-pic320.avif 320w,
+            ./assets/images/nina-carducci-profile-pic233.avif 233w
+          "
+          sizes="(max-width: 666px) 233px,(max-width: 840px) 320px,(max-width: 1580px) 446px,(max-width: 1920px) 560px"
+          src="./assets/images/nina-carducci-profile-pic560.avif"
+        />
       </div>
       <div id="about-me">
         <h3 class="about-me__title">A propos de moi</h3>
