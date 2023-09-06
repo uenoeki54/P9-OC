@@ -86,7 +86,15 @@
           <div class="carousel-item">
             <img
               fetchpriority="low"
-              src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.avif"
+              srcset="
+                ./assets/images/slider/ryoji-nicholas-green-live-concert2048.avif 2048w,
+                ./assets/images/slider/ryoji-nicholas-green-live-concert1920.avif 1920w,
+                ./assets/images/slider/ryoji-nicholas-green-live-concert1580.avif 1580w,
+                ./assets/images/slider/ryoji-nicholas-green-live-concert1140.avif 1140w,
+                ./assets/images/slider/ryoji-nicholas-green-live-concert300.avif   300w
+              "
+              sizes="(min-width: 2048px) 2048px, 100vw  "
+              src="./assets/images/slider/nicholas-green-live-concert2048.avif"
               class="d-block w-100"
               alt="..."
             />
