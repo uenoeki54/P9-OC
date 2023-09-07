@@ -1,17 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- StyleSheets & Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
-    <link rel="stylesheet" href="./assets/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link
       rel="stylesheet"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Inter&amp;family=Spectral:ital,wght@0,400;1,300;1,400;1,800&amp;display=swap"
-      onload="this.rel='stylesheet'"
+      media="all and (max-width: 1180px)"
+      href="./assets/media-query1180px.css"
     />
+    <link
+      rel="stylesheet"
+      media="all and (max-width: 1000px)"
+      href="./assets/media-query1000px.css"
+    />
+    <link
+      rel="stylesheet"
+      media="all and (max-width: 650px)"
+      href="./assets/media-query650px.css"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <script src="./assets/bootstrap/bootstrap.bundle.js" async></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+      async
+    ></script>
+    <script src="./assets/maugallery.js" async></script>
+    <script src="./assets/scripts.js" async></script>
   </head>
   <body>
     <div class="top-header">
@@ -27,11 +51,7 @@
               class="social-link"
               href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
               target="_blank"
-              ><img
-                src="assets/images/instagram.png"
-                width="20px"
-                height="20px"
-                alt="icone instagram"
+              ><img src="assets/images/instagram.png" alt=""
             /></a>
           </li>
         </ul>
@@ -70,6 +90,7 @@
             <img
               sizes="(min-width: 2040px) 1920px, calc(94.19vw +
             17px)"
+              width="1920px"
               height="100%"
               srcset="
                 ./assets/images/slider/ryoji-iwata-shibuya-crossing1920.avif 1920w,
@@ -157,8 +178,7 @@
             ./assets/images/nina-carducci-profile-pic233.avif 233w
           "
           sizes="(min-width: 2020px) 560px, (min-width: 1200px) calc(30vw - 40px), (min-width: 660px) calc(46.15vw - 75px), calc(80vw - 51px)"
-          height="560"
-          width="560"
+          height="100%"
           src="./assets/images/nina-carducci-profile-pic560.avif"
         />
       </div>
@@ -189,64 +209,55 @@
             data-gallery-tag="Concert"
             class="gallery-item"
             src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.avif"
-            height="424px"
-            width="424px"
+            height="100%"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
             src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.avif"
-            height="424px"
-            width="424px"
+            height="100%"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
             src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.avif"
-            height="424px"
-            width="424px"
+            height="100%"
           />
           <img
             data-gallery-tag="Mariages"
             class="gallery-item"
             src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.avif"
-            height="424px"
-            width="424px"
+            height="100%"
           />
           <img
             data-gallery-tag="Portrait"
             class="gallery-item"
             src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.avif"
-            height="424px"
-            width="424px"
+            height="100%"
           />
           <img
             data-gallery-tag="Mariages"
             class="gallery-item"
             src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.avif"
-            height="424px"
-            width="424px"
+            height="100%"
           />
           <img
             data-gallery-tag="Portrait"
             class="gallery-item"
             src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.avif"
-            height="424px"
-            width="424px"
+            height="100%"
           />
           <img
             data-gallery-tag="Concert"
             class="gallery-item"
             src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.avif"
-            height="424px"
-            width="424px"
+            height="100%"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
             src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.avif"
-            height="424px"
-            width="424px"
+            height="100%"
           />
         </div>
       </div>
@@ -344,7 +355,12 @@
           </form>
         </div>
         <div class="picture right">
-          <img width="419px" height="100%" src="./assets/images/camera.avif" />
+          <img
+            width="419px"
+            height="100%"
+            loading="lazy"
+            src="./assets/images/camera.avif"
+          />
         </div>
       </div>
     </div>
