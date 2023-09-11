@@ -16,6 +16,7 @@ body {
   padding-inline: 100px;
   padding-block: 30px;
   align-items: center;
+  height: 123px;
 }
 
 .top-header .name {
